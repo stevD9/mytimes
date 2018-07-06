@@ -14,22 +14,48 @@ nav li{
   margin: 0 5px;
   }
 
-  span a {
+span a {
     color: black;
   }
 
-  .logo {
+.logo {
     display: flex;
     align-items: center;
   }
 
-  .logo p {
+.logo p {
     position: relative;
     left: 20px;
     padding: 0 3px;
     margin: 0 3px;
   }
 
-  .logo-color {
+.logo-color {
     color: mediumaquamarine;
   }
+
+.story , .news-bites , img {
+    border: 1px solid black;
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+  }
+
+.column {
+  margin: 0 15px;
+}
+
+.column.large {
+     width: 630px;
+   }
+
+.column.medium {
+     width: 300px;
+   }
+
+.column.small {
+  width: 240px;
+}
