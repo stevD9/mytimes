@@ -4,6 +4,8 @@ header {
   font-weight: bold;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding-bottom: 8px;
 }
 
 nav li{
@@ -34,19 +36,31 @@ span a {
     color: mediumaquamarine;
   }
 
-.story , .news-bites , img {
+/*.story , .news-bites , img, .container, .align, .column {
     border: 1px solid black;
-  }
+  }*/
 
 .container {
     display: flex;
-    justify-content: center;
-    margin: 40px 0;
+    justify-content: space-between;
+    margin: 40px auto;
+    width: 70%
   }
 
-.column {
-  margin: 0 15px;
-}
+  .column {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+
+  .align {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    max-height: 600px;
+    width: 45%
+  }
 
 .column.large {
      width: 630px;
@@ -58,4 +72,103 @@ span a {
 
 .column.small {
   width: 240px;
+  margin-right: 15px;
+  flex-direction: column;
+}
+
+.news-bites h2 {
+  font-size: 16px;
+ font-weight: bold;
+ text-align: center;
+ flex-direction: column;
+}
+
+.news-bites .list {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-around;
+}
+
+.list p{
+
+  border-bottom: 1px solid black;
+}
+
+.story.mother {
+  background-image: url("./images/img-story-main.png");
+  height: 300px;
+}
+
+.story.earth {
+  background-image: url("images/img-story-2.png");
+  height: 300px;
+}
+
+.story.camera {
+  background-image: url("images/img-story-3.png");
+  height: 300px;
+}
+
+.story.cats {
+  background-image: url("images/img-story-1.png");
+  height: 300px;
+}
+
+.story.earth, .story.camera, .story.cats {
+  display: flex;
+  justify-content: center;
+}
+
+.story p{
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.story h1{
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  margin-top: 0;
+}
+
+.story.mother h1{
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  margin: 0;
+}
+
+.footer {
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mytimes p {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  display: inline;
+  margin: 15px;
+}
+
+.nav li {
+  display: inline;
+  padding: 0 5px;
+  margin: 0 5px;
 }
